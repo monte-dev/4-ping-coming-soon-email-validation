@@ -82,7 +82,7 @@ body {
   box-shadow: 2px 8px 10px 0 rgba(0, 0, 0, 0.15);
   letter-spacing: 1px;
 }
-.error-email {
+.error-message {
   font-size: 12px;
   color: var(--light-red);
   margin-bottom: 25px;
@@ -166,7 +166,7 @@ footer p {
     background-color: var(--blue);
     opacity: 0.9;
   }
-  .error-email {
+  .error-message {
     order: 3;
     padding-left: 24px;
     text-align: left;
