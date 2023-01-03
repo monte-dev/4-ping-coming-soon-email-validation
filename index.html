@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <title>4. Ping coming soon page - Email input validation | FEM</title>
 </head>
 
@@ -20,8 +20,8 @@
         </header>
         <section class="notify">
             <form action="" id="notifyForm">
-                <input type="email" aria-label="email input" id="email">
-                <span class="error-email"></span>
+                <input type="email" aria-label="email input" id="email" placeholder="Your email address...">
+                <span class="error-email hidden">Please provide a valid email address</span>
                 <button type="submit" aria-label="submit button" id="submitForm">Notify Me</button>
             </form>
         </section>
@@ -30,9 +30,9 @@
         </section>
         <footer>
             <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
             </ul>
             <p>&copy; Copyright Ping. All rights reserved.</p>
         </footer>
