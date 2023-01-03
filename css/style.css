@@ -162,10 +162,20 @@ footer p {
     order: 2;
     flex: 2 1 0;
   }
+  #submitForm:hover {
+    background-color: var(--blue);
+    opacity: 0.9;
+  }
   .error-email {
     order: 3;
     padding-left: 24px;
     text-align: left;
     flex: 1 1 100%;
   }
+  .social-links i:hover {
+    color: #fff;
+    background-color: var(--blue);
+    border-color: var(--blue);
+  }
+  
 }
