@@ -134,20 +134,38 @@ footer p {
   .wrapper {
     padding-top: 0;
   }
+  .launch-soon h1 {
+    font-size: 3rem;
+  }
+  .launch-soon img {
+    width: 6rem;
+  }
+  .launch-soon p {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
   .notify {
     width: calc(100% - 40px);
+    padding-bottom: 10px;
   }
   #notifyForm {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   #email {
-    width: 65%;
-    margin-right: 10px;
+    margin-right: 14px;
+    order: 1;
+    flex: 5 1 0;
   }
   #submitForm {
     margin-top: 0;
-    width: 35%;
+    order: 2;
+    flex: 2 1 0;
   }
   .error-email {
+    order: 3;
+    padding-left: 24px;
+    text-align: left;
+    flex: 1 1 100%;
   }
 }
