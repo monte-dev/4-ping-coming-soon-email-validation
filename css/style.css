@@ -24,8 +24,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-width: 700px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 auto;
   padding-top: 160px;
 }
 /* launch soon section */
@@ -51,8 +52,8 @@ body {
 /*  notify form section */
 
 .notify {
-  padding: 0 20px 30px 20px;
-  width: 100%;
+  padding: 0 0px 30px 0px;
+  width: 80%;
 }
 #notifyForm {
   display: flex;
@@ -64,11 +65,16 @@ body {
   margin-bottom: 8px;
   border: none;
   border-radius: 20px;
+  border: 1px solid;
+  font-size: 16px;
 }
 #email {
-  border: 1px solid var(--pale-blue);
+  border-color: var(--pale-blue);
 }
 #submitForm {
+  border-color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
   margin-top: 4px;
   color: #fff;
   background-color: var(--blue);
@@ -87,7 +93,7 @@ body {
 }
 /* promo section */
 .promo {
-  padding-bottom: 100px;
+  padding: 40px 20px 100px 20px;
 }
 
 .promo img {
@@ -107,17 +113,41 @@ body {
 }
 
 .social-links i {
-    font-size: 1rem;
-    border-radius: 50%;
-    color: var(--blue);
-    border: 1px solid var(--pale-blue);
-    line-height: 2em;
-    width: 2em;
-    height: 2em;
-    text-align: center;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: var(--blue);
+  border: 1px solid var(--pale-blue);
+  line-height: 2em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
 }
 footer p {
   font-size: 12px;
   color: var(--gray);
   padding-bottom: 40px;
+}
+
+/* Desktop media queries */
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-top: 0;
+  }
+  .notify {
+    width: calc(100% - 40px);
+  }
+  #notifyForm {
+    flex-direction: row;
+  }
+  #email {
+    width: 65%;
+    margin-right: 10px;
+  }
+  #submitForm {
+    margin-top: 0;
+    width: 35%;
+  }
+  .error-email {
+  }
 }
