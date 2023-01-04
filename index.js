@@ -14,12 +14,14 @@ function validateEmail() {
             errorMessage.textContent = 'We will email you with more news before launch!'
         // email did not pass check format 
         } else {
+            errorMessage.style.color = 'var(--light-red)';
             errorMessage.textContent = `Please provide a valid email address`
 
             
         }
     // if email field is empty throw error message
     } else {
+        errorMessage.style.color = 'var(--light-red)';
         errorMessage.textContent = `Email field can't be empty`
     }
     // show error message no matter if input is correct or not
